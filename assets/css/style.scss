@@ -1,5 +1,5 @@
 /*
-Template Name: Epicurean - Food & Restaurant Html Template
+Template Name: m4yours
 */
 
 /*================================================
@@ -81,6 +81,8 @@ img {
 
 h1,h2,h3,h4,h5,h6{
   margin-bottom: 0;
+  font-weight: 700;
+  font-family: var(--ff-inter);
 }
 
 
@@ -212,6 +214,10 @@ input:-webkit-autofill {
   .pb-96 {
     padding-bottom: 36px;
   }
+}
+
+.text_color_green{
+  color: var(--color-green);
 }
 
 /*
@@ -366,7 +372,6 @@ body::-webkit-scrollbar-thumb {
   width: 100%;
   padding: 18px 0px;
   background-color: #000;
-  position: relative;
   // &.sticky {
   //   position: fixed;
   //   animation: slide_down_site 0.35s ease-out;
@@ -782,4 +787,62 @@ body::-webkit-scrollbar-thumb {
 
   /* Menu button End */
   /* menu End */
+}
+
+
+/* Hero Css */
+
+.hero-area{
+  background-image: url(../images/hero-bg.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @media #{$max-sm}{
+    background-image: url(../images/hero-bg-mobile.svg);
+    min-height: unset;
+    padding: 108px 0 60px;
+    background-size: 100% 100%;
+  }
+}
+
+.hero-info{
+  padding: 50px 0;
+  span, p{
+    font-family: var(--ff-inter);
+  }
+  span{
+    font-weight: 600;
+    color: var(--color-green);
+    font-size: 14px;
+    @media #{$max-sm}{
+      font-size: 12px;
+    }
+  }
+  h1{
+    font-size: clamp(20px, 4vw, 36px);
+    margin: 5px 0 6px;
+  }
+  p{
+    font-size: 14px;
+    @media #{$max-sm}{
+      font-size: 10px;
+    }
+  }
+  .hero-btn{
+    font-family:var(--ff-public);
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 1;
+    letter-spacing: 0.43px;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: var(--color-green);
+    border-radius: 4px;
+    padding: 8px 14px;
+    display: inline-block;
+  }
 }

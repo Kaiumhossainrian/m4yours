@@ -1,5 +1,5 @@
 /*
-Template Name: Epicurean - Food & Restaurant Html Template
+Template Name: m4yours
 */
 /*================================================
 1. Default CSS
@@ -46,6 +46,8 @@ img {
 
 h1, h2, h3, h4, h5, h6 {
   margin-bottom: 0;
+  font-weight: 700;
+  font-family: var(--ff-inter);
 }
 
 html, body {
@@ -164,6 +166,10 @@ input:-webkit-autofill:hover, input:-webkit-autofill:focus {
   .pb-96 {
     padding-bottom: 36px;
   }
+}
+
+.text_color_green {
+  color: var(--color-green);
 }
 
 /*
@@ -339,7 +345,6 @@ body::-webkit-scrollbar-thumb {
   width: 100%;
   padding: 18px 0px;
   background-color: #000;
-  position: relative;
 }
 
 @-webkit-keyframes slide_down_site {
@@ -506,7 +511,6 @@ body::-webkit-scrollbar-thumb {
 /*Menu Meta*/
 .search-wrap {
   width: 15px;
-  margin-right: 70px;
 }
 
 .search-wrap .search-icon.active i.cancel {
@@ -786,5 +790,81 @@ body::-webkit-scrollbar-thumb {
   }
   /* Menu button End */
   /* menu End */
+}
+
+/* Hero Css */
+.hero-area {
+  background-image: url(../images/hero-bg.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media only screen and (max-width: 767.98px) {
+  .hero-area {
+    background-image: url(../images/hero-bg-mobile.svg);
+    min-height: unset;
+    padding: 108px 0 60px;
+    background-size: 100% 100%;
+  }
+}
+
+.hero-info {
+  padding: 50px 0;
+}
+
+.hero-info span, .hero-info p {
+  font-family: var(--ff-inter);
+}
+
+.hero-info span {
+  font-weight: 600;
+  color: var(--color-green);
+  font-size: 14px;
+}
+
+@media only screen and (max-width: 767.98px) {
+  .hero-info span {
+    font-size: 12px;
+  }
+}
+
+.hero-info h1 {
+  font-size: clamp(20px, 4vw, 36px);
+  margin: 5px 0 6px;
+}
+
+.hero-info p {
+  font-size: 14px;
+}
+
+@media only screen and (max-width: 767.98px) {
+  .hero-info p {
+    font-size: 10px;
+  }
+}
+
+.hero-info .hero-btn {
+  font-family: var(--ff-public);
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: 0.43px;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: var(--color-green);
+  border-radius: 4px;
+  padding: 8px 14px;
+  display: inline-block;
 }
 /*# sourceMappingURL=style.css.map */
